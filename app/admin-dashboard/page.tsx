@@ -1,16 +1,12 @@
-
 import AdminDashboard from '@/components/AdminDashboard';
-import React from 'react'
+import React from 'react';
 import { ToastContainer } from "react-toastify";
 
-export const Appointmentpage = () => {
+export default function AppointmentPage() {
   return (
     <div>
-        <AdminDashboard />
-
-    
+      <AdminDashboard />
+      <ToastContainer />
     </div>
-  )
+  );
 }
-
-export default Appointmentpage
