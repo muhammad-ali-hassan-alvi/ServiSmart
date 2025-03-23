@@ -1,14 +1,26 @@
-import React from "react";
-import Appointment from "@/components/Appointment";
+
+import Appointment from '@/components/Appointment'
+import React from 'react'
 import { ToastContainer } from "react-toastify";
 
-const AppointmentPage: React.FC = () => {
+export const Appointmentpage = () => {
   return (
     <div>
-      <Appointment />
-      <ToastContainer />
+        <Appointment/>
+        <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+    
     </div>
-  );
-};
+  )
+}
 
-export default AppointmentPage;
+export default Appointmentpage
